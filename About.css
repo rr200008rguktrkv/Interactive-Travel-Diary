@@ -1,0 +1,50 @@
+/* About.css */
+.about-background {
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
+  
+  .about-glass h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .about-text {
+    font-size: 1.2rem;
+    color: #0f0000;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .about-button {
+    padding: 10px 25px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #333333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .about-button:hover {
+    background-color: #e0e0e0;
+  }
+  

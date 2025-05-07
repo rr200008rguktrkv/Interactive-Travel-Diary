@@ -1,0 +1,178 @@
+/* Dashboard.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-nav {
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: flex-end; /* Move links to the right */
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.top-nav .nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4); /* lighter and modern */
+  padding: 10px 25px;
+  border-radius: 40px;
+  backdrop-filter: blur(8px);
+}
+
+.top-nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+
+
+.top-nav .nav-links button {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid #fff;
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.top-nav .nav-links button:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.top-nav .nav-links a {
+  padding: 8px 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.top-nav .nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ff7b54; /* some nice hover color */
+}
+
+
+/*.top-nav .nav-links button {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  white-space: nowrap;
+}
+
+.top-nav .nav-links button:hover {
+  background: #fff;
+  color: #333;
+}
+*/
+
+.dashboard-hero {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.dashboard-hero .slick-slider,
+.dashboard-hero .slick-list,
+.dashboard-hero .slick-track,
+.dashboard-hero .slick-slide,
+.dashboard-hero img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-heading {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+.cta-buttons button {
+  margin: 0 10px;
+  padding: 12px 28px;
+  font-size: 16px;
+  border: none;
+  background: #ff6f61;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;  /* Smooth transition for all changes */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cta-buttons button:hover {
+  background: #ff3d3d;  /* Change background color on hover */
+  transform: scale(1.1);  /* Slightly grow the button on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);  /* Bigger shadow for a hover effect */
+}
+
+
+
+.profile-status {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.profile-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}

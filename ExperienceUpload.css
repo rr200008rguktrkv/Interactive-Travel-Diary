@@ -1,0 +1,98 @@
+/* pages/ExperienceUpload.css */
+
+.upload-form-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+}
+
+.form-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.experience-upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-input,
+.form-textarea,
+.file-input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #3498db;
+}
+
+.form-textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+.file-upload {
+  display: flex;
+  justify-content: space-between;
+}
+
+.file-input-label {
+  display: block;
+  font-size: 1.1rem;
+  color: #34495e;
+}
+
+.file-input {
+  display: none;
+}
+
+.submit-button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+.submit-button:disabled {
+  background-color: #7f8c8d;
+  cursor: not-allowed;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .upload-form-container {
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 0.9rem;
+  }
+}

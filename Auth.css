@@ -1,0 +1,128 @@
+/* src/pages/Auth.css */
+.auth-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+  }
+  
+  .auth-left,
+  .auth-right {
+    flex: 1;
+    position: relative;
+  }
+  
+  .auth-left {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding: 60px;
+  }
+  
+  .auth-left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .auth-left h1,
+  .auth-left p {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .auth-left h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .auth-left p {
+    font-size: 1.2rem;
+    max-width: 400px;
+  }
+  
+  .auth-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ffffffcc, #f7f7f7cc);
+    backdrop-filter: blur(12px);
+  }
+  
+  .glass-card {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+  }
+  
+  .glass-card h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .glass-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .glass-card input[type="text"],
+  .glass-card input[type="email"],
+  .glass-card input[type="password"] {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f0f0f0;
+    outline: none;
+  }
+  
+  .auth-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s ease;
+  }
+  
+  .auth-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .glass-card p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .glass-card a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 8px;
+  }
+  

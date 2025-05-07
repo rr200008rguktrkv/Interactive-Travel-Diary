@@ -1,0 +1,19 @@
+/* src/pages/ProfileCard.css */
+.profilecard-container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  width: 280px;
+  margin: 10px auto;
+  backdrop-filter: blur(10px);
+}
+
+.profilecard-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}

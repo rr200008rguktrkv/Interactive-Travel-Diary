@@ -1,0 +1,75 @@
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?crop=entropy&cs=tinysrgb&fit=crop&w=1400&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+  }
+  
+  .contact-glass {
+    background: rgba(0, 0, 0, 0.5); /* dark glass effect */
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .contact-glass h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffcc00; /* Gold text for highlights */
+  }
+  
+  .contact-glass p {
+    margin-bottom: 20px;
+    color: #eeeeee;
+    font-size: 16px;
+  }
+  
+  .contact-glass form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-glass input,
+  .contact-glass textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .contact-glass input::placeholder,
+  .contact-glass textarea::placeholder {
+    color: #dddddd;
+  }
+  
+  .contact-glass button {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-glass button:hover {
+    background-color: #e6b800;
+  }
+  
